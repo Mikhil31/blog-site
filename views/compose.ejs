@@ -1,0 +1,18 @@
+<%- include("partials/header") %>
+    <h1>Compose</h1>
+    <form action="/compose" method="post">
+        <label for="title">Title</label>
+        <br>
+        <!-- title goes here -->
+        <input type="text" name="titlePost" id="title" size="148" placeholder="type title here" autocomplete="off">
+        <br>
+        <br>
+        <label for="textBox">Post</label>
+        <br>
+        <!-- the body of the blog is entered here -->
+        <textarea name="blogPost" id="textBox" cols="150" rows="7" autocomplete="off"
+            placeholder="type post here"></textarea>
+        <br>
+        <br>
+        <button type="submit" name="deez" class=" btn btn-primary">Publish</button>
+    </form>

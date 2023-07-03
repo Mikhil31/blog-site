@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <h1>Home</h1>
+    <p>
+        <%= homeStartingContent %>
+    </p>
+    <br>
+    <p style="display: none;">
+        <%=body %>
+
+    </p>
+    <% for(let i=0;i<body.length;i++){ %>
+        <h1>
+
+            <%= body[i].title %>
+        </h1>
+        <br>
+        <p>
+            <%= body[i].body %>
+        </p>
+        <% }%>
+            <%- include("partials/footer") %>
