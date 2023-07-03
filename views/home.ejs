@@ -20,7 +20,8 @@
         </h1>
         <br>
         <p>
-            <%= body[i].body %>
+            <% finalString=body[i].body.slice(0,100)+"...."; %>
+                <%= finalString %>
         </p>
         <% }%>
             <%- include("partials/footer") %>
